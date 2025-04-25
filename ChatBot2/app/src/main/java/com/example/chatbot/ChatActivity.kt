@@ -110,7 +110,7 @@ fun decodeUnicodeEscapes(text: String): String {
 fun sendMessageToServer(message: String, onResult: (String) -> Unit) {
     CoroutineScope(Dispatchers.IO).launch {
         try {
-            val url = URL("http://192.168.100.12:5000/chat")
+            val url = URL("agrega aqui la IP que te dio la consola y agregale un :5000/chat")
             val connection = url.openConnection() as HttpURLConnection
             connection.requestMethod = "POST"
             connection.doOutput = true
